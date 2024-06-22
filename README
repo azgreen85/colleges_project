@@ -1,0 +1,57 @@
+College Salaries Dashboard Project
+Overview
+This project aims to create a comprehensive dashboard to visualize which majors, schools, and types of schools produce alumni with the highest earnings. The process involves:
+
+Loading CSV Files into a SQL Database
+Crafting and Executing SQL Queries
+Extracting Data with Python
+Visualizing Data with Tableau
+Steps
+1. Loading CSV Files into SQL Database
+We started with three CSV files:
+
+salaries-by-college-type.csv
+degrees-that-pay-back.csv
+salaries-by-region.csv
+These files were loaded into a SQLite database.
+
+2. SQL Queries
+SQL queries were written to extract relevant data:
+
+Top 5 and bottom 5 majors for starting and mid-career salaries
+Organized by school type, school name, and major
+These queries are included in the export_collegemajor_queries_to_csv.py script.
+
+3. Data Extraction with Python
+A Python script was created to:
+
+Load CSV files into the database
+Execute SQL queries
+Export results to CSV files
+4. Data Visualization with Tableau
+The extracted data was visualized in Tableau to create an interactive dashboard. The dashboard includes:
+
+Top 5 majors by starting and mid-career salaries
+Top 5 schools by starting and mid-career salaries
+Top 5 school types by starting and mid-career salaries
+Bottom 5 majors for starting salaries (visualized as "Majors to Avoid")
+View the Tableau Dashboard
+
+Included Files
+Python Script: export_collegemajor_queries_to_csv.py (contains SQL queries and export code)
+CSV Files:
+salaries-by-college-type.csv
+degrees-that-pay-back.csv
+salaries-by-region.csv
+SQLite Database: database.db (optional)
+README: This file
+Running the Project
+Prerequisites: Ensure Python and SQLite are installed.
+Setup: Place the CSV files in the same directory as the export_collegemajor_queries_to_csv.py script.
+Execution:
+sh
+Copy code
+python3 export_collegemajor_queries_to_csv.py
+Visualization: Use Tableau to visualize the data using the provided CSV files.
+Conclusion
+This project showcases how to use SQL and Python for data manipulation and extraction, followed by data visualization using Tableau. The dashboard highlights the most and least lucrative majors, schools, and school types.
